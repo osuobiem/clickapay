@@ -28,13 +28,12 @@ class Mailer{
 			$mail->Host = 'clickapay.com.ng';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth = true;                               // Enable SMTP authentication
 			$mail->Username = 'no-reply@clickapay.com.ng';                 // SMTP username
-			$mail->Password = '@gara22na1CA2';                           // SMTP password
+			$mail->Password = '';                           // SMTP password
 			$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 			$mail->Port = 587;                               // TCP port to connect to
 			//Recipients 
 			$mail->setFrom($sender, 'Clickapay');
 			$mail->addAddress($email, $name);     // Add a recipient
-			//$mail->addReplyTo('abit@nugitech.com', 'Abit Trader');
 			
 			// Attachments
 			//$mail->addAttachment('/var/tmp/file.ta$mail->send()r.gz');         // Add attachments
